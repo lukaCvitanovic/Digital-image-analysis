@@ -8,4 +8,6 @@ Functions
 
 1) connvertToGrayScale accepts two arguments, image path and boolean value. If the boolean values is true then the image is shown and returned otherwise it's not shown.
 
-2) createHistogram creates histogram that show the number of pixcels of certain value. This function accepts five arguments, image path, picture, cumulative, show_pic and show_hist. This function can accept path to an image or image that has previously imported.   
+2) createHistogram creates histogram that show the number of pixcels of certain value. This function accepts five arguments, image path, pic, cumulative, show_pic and show_hist. This function can accept path to an image or image that has previously imported, for this purpose arguments image path and pic are used. Argument cumulative is boolean values that determines will the histogram be cumulative or not. Boolean argument show_pic and show_hist determine wether to show image and histogram or not.
+
+3) normalizeHistogram spreads image histogram over the whole range of values (0-255) which has the effect of adding contrast to the image. This function has two arguments, image path and show_pic. Argument show_pic accepts the boolean value and determines wether or not the path image will be shown. Normalized histogram is always show.
