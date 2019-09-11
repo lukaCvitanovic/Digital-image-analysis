@@ -32,4 +32,8 @@ Helper Functions
 
 2.1.1.1) appendSpace is helper function that appends space to the end of the string. This function accepts single argument, row which is a string. New string is returned after the space has been appended.
 
-2.2) calcDistToEdge is helper function 
+2.2) calcDistToEdge is helper function that calculates the distance of pivot karnel element from the karnel edge. The distances form each edge is stored in array that is returned. This function accepts one argument, kernel that is 2D array that represnts karnel matrix. 
+
+2.3) karnelFinal is helper function that turns the pivot element from string to float thus making karnel suited for use in calculations. This function accepts two arguments, karnel and pos. Karnel is 2D array that represents karnel matrix. Pos is array that contains distances of pivot element from karnel edges. New karnel is returned at the end of the function.
+
+2.4) rotate180 is helper function that rotates the karnel elements by 180°. This is done by taking elements from the back and putting it to the front.
